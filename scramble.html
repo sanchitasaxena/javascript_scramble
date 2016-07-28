@@ -19,8 +19,12 @@
             // Grab the corresponding scrambled word from the SCRAMBLED array
             var randomWordIndex = WORDS.indexOf(randomWord);
 
-            alert(SCRAMBLED[randomWordIndex]);
+            var scrambledWord = alert(SCRAMBLED[randomWordIndex]);
             var guess = prompt('Please guess the word unscrambled, thanks.');
+            
+             if (scrambledWord == guess.toLowerCase()) {
+               alert('Good job!')  
+             }
             
             // prompt the user to guess the original word when given the scrambled word
 
@@ -28,13 +32,14 @@
             
             // If the user guesses the correct word, congratulate them.
 
-            playing = confirm("Press OK To keep playing or Cancel to quit");
+            
 
             // What does confirm() return?
             // What does setting the playing variable do?
+            playing = confirm("Press OK To keep playing or Cancel to quit");
+            alert("goodbye!");
         }
-
-        alert("goodbye!");
+        
     </script>
     
 </body>
